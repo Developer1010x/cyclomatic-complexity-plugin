@@ -1,0 +1,7 @@
+build/
+*.so
+*.o
+output.cy
+compile_commands.json
+.DS_Store
+*.bak
