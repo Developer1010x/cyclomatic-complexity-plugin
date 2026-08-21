@@ -115,10 +115,22 @@ is wrong before changing either.
 
 ## History
 
-Started as a 2024 university project (`Sneha1m/llvm2024Projects` PR #1). That
-version mixed the libclang C API and the Clang C++ AST API in one file, with
-the C half unreferenced and missing its header, and hardcoded a macOS Homebrew
-path in CMake. It did not build. This is a rewrite of the working half.
+This began as a college project in 2024, written to understand how compilers
+work from the inside — specifically how a compiler represents code once it has
+stopped being text and become a tree. Cyclomatic complexity was the excuse: it
+is a small enough metric that the interesting part is not the arithmetic but
+the AST walk needed to gather it, and the questions it forces are the real
+ones. What counts as a branch? Why is a `switch` not one decision but several?
+Where does a lambda's control flow belong?
+
+The original is in `Sneha1m/llvm2024Projects` (PR #1). It mixed the libclang C
+API and the Clang C++ AST API in one file, with the C half unreferenced and its
+header never included, and hardcoded a macOS Homebrew path in CMake. It did not
+build.
+
+This is a rewrite of the working half, brought up to LLVM 18, corrected where
+the original counted wrong, and given tests. The 2024 code is worth diffing
+against `src/` — the gap between the two is most of what the project taught.
 
 ## Licence
 
