@@ -1,5 +1,7 @@
 # cyclomatic-complexity
 
+![C++: Clang plugin](https://img.shields.io/badge/C++-Clang_plugin-00599C?logo=cplusplus&logoColor=white) ![LLVM: 18](https://img.shields.io/badge/LLVM-18-262D3A?logo=llvm&logoColor=white) ![Analyses: C and C++](https://img.shields.io/badge/Analyses-C_and_C++-555555) [![License: MIT](https://img.shields.io/badge/License-MIT-2EA44F)](LICENSE)
+
 A Clang plugin that reports the [cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity)
 of every function defined in the file being compiled. It runs as part of a normal
 compile, so it sees exactly the code the compiler sees — after preprocessing, with
@@ -135,3 +137,7 @@ against `src/` — the gap between the two is most of what the project taught.
 ## Licence
 
 MIT
+
+---
+
+Built by **S. Prajwall Narayana** · [Portfolio](https://sprajwallnarayana.vercel.app) · [GitHub](https://github.com/Developer1010x)
